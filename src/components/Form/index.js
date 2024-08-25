@@ -24,7 +24,7 @@ const JsonForm = () => {
         throw new Error('Invalid JSON format');
       }
 
-      const response = await axios.post('http://localhost:5000/bfhl', parsedData);
+      const response = await axios.post('https://back-i9pr.onrender.com/bfhl', parsedData);
       setApiResponse(response.data);
     } catch (error) {
       setApiResponse(null);
